@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Roboto;
+    }
+
+    .container {
+        align-items: center;
+      width:759px; ;
+      height: 578px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background: var(--background, #FDFDFD);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+        color: #6D6D6D;
+
+/* H1/12/Medium */
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+        border-radius: 6px;
+border: 0.648px solid #6D6D6D;
+background: #FFF;
+box-shadow: 0px 0.6483911275863647px 1.2967822551727295px 0px rgba(0, 0, 0, 0.08);display: flex;
+width: 246px;
+height: 31px;
+padding: 8px;
+align-items: center;
+font-family: roboto;
+    }
+
+    .form-group input[type="submit"] {
+        display: flex;
+width: 245px;
+height: 32px;
+padding: 8px 15px;
+justify-content: center;
+align-items: center;
+gap: 5px;
+background-color: #007E87;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #ef0303d8;
+    }
+    
+    h1{
+        color: #000;
+text-align: center;
+
+/* H1/28/Semibold */
+font-family: Roboto;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+  </style>
+</head>
+<body>
+    
+  <div class="container">
+    <h1>Log in</h1>
+    <form action="/login" method="post">
+      <div class="form-group">
+        <label for="username">Email Address</label>
+        <input type="text" id="username" name="username" required placeholder="posh@textile.com">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="**********">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Login">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
